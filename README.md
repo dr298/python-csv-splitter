@@ -1,4 +1,4 @@
-# python-csv-splitter
+# Python-csv-splitter
 Split your csv file into 6 files with python
 
 File Splitter Script
