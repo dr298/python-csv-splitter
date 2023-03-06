@@ -9,7 +9,7 @@ This Python script reads a CSV file and splits it into six separate files with a
 - Save the script to your desired directory.
 - Open the command prompt or terminal and navigate to the directory containing the script.
 - Set the input file name and output file prefix by modifying the variables input_file and output_prefix.
-- Run the script by executing python file_splitter.py.
+- Run the script by executing ```python3 split-csv-6```
 - The script will split the input file into six separate files, each with a name of the form <output_prefix>i.csv, where i is an integer from 1 to 6. The number of rows per file is determined automatically, ensuring that each file has an equal number of rows (except for the last file, which may have fewer rows).
 
 ### Note: This tool is for educational purposes only. Use it at your own risk. The author is not responsible for any illegal activities conducted using this tool.
