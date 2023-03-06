@@ -1,0 +1,22 @@
+import pandas as pd
+
+# Mengatur nama file input dan output
+input_file = "file.csv"
+output_prefix = "file-"
+
+# Membaca file CSV
+df = pd.read_csv(input_file)
+
+# Menghitung jumlah baris data
+total_rows = df.shape[0]
+
+# Menghitung jumlah baris per file output
+rows_per_file = int(total_rows / 6) + 1
+
+# Memecah data menjadi 6 file terpisah
+for i in range(6):
+    start_row = i * rows_per_file
+    end_row = min((i + 1) * rows_per_file, total_rows)
+    output_file = f"{output_prefix}{i+1}.csv"
+    df[start_row:end_row].to_csv(output_file, index=False)
+    print(f"File {output_file} created with {end_row - start_row} rows")
